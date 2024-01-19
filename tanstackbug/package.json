@@ -1,13 +1,12 @@
 {
     "name": "client",
-    "type": "commonjs",
     "version": "0.1.0",
     "private": true,
     "engines": {
         "node": ">=20.0.0"
     },
     "scripts": {
-        "dev": "next dev",
+        "dev": "echo I should not need to give it the turbo flag to work && next dev --turbo",
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
