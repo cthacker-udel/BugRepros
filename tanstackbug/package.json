@@ -6,6 +6,7 @@
         "node": ">=20.0.0"
     },
     "scripts": {
+        "brokendev": "next dev",
         "dev": "echo I should not need to give it the turbo flag to work && next dev --turbo",
         "build": "next build",
         "start": "next start",
