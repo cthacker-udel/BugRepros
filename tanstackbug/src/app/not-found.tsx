@@ -6,8 +6,6 @@
 import { useRouter } from "next/navigation";
 import React from "react";
 
-import backgroundGif from "@/assets/images/gif/404anim.gif";
-
 import styles from "./notFound.module.css";
 
 /**
@@ -27,16 +25,7 @@ const NotFoundPage = (): JSX.Element => {
     }, [router]);
 
     return (
-        <div
-            className="h-screen w-screen flex flex-col justify-center items-center"
-            style={{
-                backgroundBlendMode: "screen",
-                backgroundColor: "rgba(255, 255, 255, 0.60)",
-                backgroundImage: `url(${backgroundGif.src})`,
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "100vw 100vh",
-            }}
-        >
+        <div className="h-screen w-screen flex flex-col justify-center items-center">
             <div className="bg-sky-500 bg-opacity-90 p-2 rounded flex flex-col items-center w-1/2 gap-10">
                 <h1
                     className={`${styles.wrong_page_header} text-white font-extrabold`}
