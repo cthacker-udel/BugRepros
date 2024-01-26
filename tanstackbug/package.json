@@ -12,14 +12,7 @@
         "start": "next start",
         "lint": "next lint",
         "clean": "rimraf .next",
-        "rclean": "npm run clean && rimraf node_modules",
-        "ship-announce": "echo Shipping ...📦",
-        "ship-install": "npm i -D",
-        "ship-check": "npm run lint && npm run build && rm -rf node_modules",
-        "ship-push": "cd .. && bash ./copy_taskhub.sh && cd ./Taskhub",
-        "ship-cleanup": "npm i -D && prisma generate && npm run dev",
-        "ship": "npm run ship-announce && npm run ship-install && npm run ship-check && npm run ship-push && npm run ship-cleanup",
-        "pre-ship": "npm run ship-announce && npm run ship-install && npm run ship-check"
+        "rclean": "npm run clean && rimraf node_modules"
     },
     "dependencies": {
         "@azure/identity": "^4.0.0",
